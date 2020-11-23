@@ -8,7 +8,8 @@
 </head>
 <body>
   <div id="root">
-    <h1>{{ title }}</h1>
+    <button v-on:click="openModal">Show Modal</button>
+    <modal v-bind:view='view' v-on:change-view="closeModal"></modal>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <script src="./js/index.js"></script>
